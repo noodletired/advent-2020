@@ -23,11 +23,13 @@
   {
     return entry.row * 8 + entry.col
   }
-  
+
+
   function MaxSeatID(data)
   {
     return Math.max(...data.map(ComputeSeatID))
   }
+
 
   function MissingSeatID(data)
   {
