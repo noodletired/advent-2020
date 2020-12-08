@@ -34,7 +34,7 @@
       .map(str => str
         .split('\n').filter(el => !!el)
         .map( entry => entry.match(/[a-z]/g) )
-        .reduce( (intersection, entry, i, arr) => [...intersection].filter(ch => entry.includes(ch)))
+        .reduce( (intersection, entry) => [...intersection].filter(ch => entry.includes(ch)))
       )
       .reduce( (count, intersection) => count + intersection.length, 0 )
   }
